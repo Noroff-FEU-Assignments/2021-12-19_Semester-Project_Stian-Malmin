@@ -48,15 +48,17 @@ nav ul {
 	display: flex;
 	list-style-type: none;
 	text-align: center;
-	padding-top: 5px;
-	padding-bottom: 5px;
+
 	border: #fff;
 	border-style: solid;
 	border-width: 8px 0px;
 }
 nav ul li {
-	display: inline-block;
-	margin: auto;
+	flex: 1;
+	border-style: solid;
+	padding: 5px 0px;
+	border-color: #fff;
+	border-width: 0px 0.1px;
 }
 /*_____________________________index_____________________________
  */
@@ -72,13 +74,12 @@ h2 {
 	padding-top: 10%;
 	color: #445065;
 }
-.enter-shop a{
+.enter-shop a {
 	background-color: #f9a20d;
 	margin: 10%;
 	padding: 2% 8%;
 	display: inline-block;
 	border-radius: 30px;
-
 }
 body {
 	background-image: url(images/Background.png);
