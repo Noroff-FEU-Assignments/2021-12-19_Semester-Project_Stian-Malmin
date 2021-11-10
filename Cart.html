@@ -55,10 +55,10 @@
       <div class="cart-list">
         <table>
           <tr>
-            <th>Current</th>
-            <th>Price</th>
+            <th>product</th>
             <th>Size</th>
             <th>Quantity</th>
+            <th>Item price</th>
             <th>Subtotal</th>
           </tr>
 
@@ -71,25 +71,24 @@
                 </div>
               </div>
             </td>
-
+            <td>
+              <div class="counter">
+                <div class="next" onclick="increment()"></div>
+                <div class="prev" onclick="decrement()"></div>
+                <h2 id="counting">1</h2>
+              </div>
+            </td>
+            <td>
+              <div class="counter">
+                <div class="next" onclick="increment()"></div>
+                <div class="prev" onclick="decrement()"></div>
+                <h2 id="counting">1</h2>
+              </div>
+            </td>
             <td>
               <div class="price">
-                Price: $50.00<br />
+                $50.00<br />
                 <a href="">Remove</a>
-              </div>
-            </td>
-            <td>
-              <div class="counter">
-                <div class="next" onclick="increment()"></div>
-                <div class="prev" onclick="decrement()"></div>
-                <h2 id="counting">1</h2>
-              </div>
-            </td>
-            <td>
-              <div class="counter">
-                <div class="next" onclick="increment()"></div>
-                <div class="prev" onclick="decrement()"></div>
-                <h2 id="counting">1</h2>
               </div>
             </td>
             <td>$50.00</td>
@@ -103,57 +102,24 @@
                 </div>
               </div>
             </td>
-
+            <td>
+              <div class="counter">
+                <div class="next" onclick="increment()"></div>
+                <div class="prev" onclick="decrement()"></div>
+                <h2 id="counting">1</h2>
+              </div>
+            </td>
+            <td>
+              <div class="counter">
+                <div class="next" onclick="increment()"></div>
+                <div class="prev" onclick="decrement()"></div>
+                <h2 id="counting">1</h2>
+              </div>
+            </td>
             <td>
               <div class="price">
-                Price: $50.00<br />
+                $50.00<br />
                 <a href="">Remove</a>
-              </div>
-            </td>
-            <td>
-              <div class="counter">
-                <div class="next" onclick="increment()"></div>
-                <div class="prev" onclick="decrement()"></div>
-                <h2 id="counting">1</h2>
-              </div>
-            </td>
-            <td>
-              <div class="counter">
-                <div class="next" onclick="increment()"></div>
-                <div class="prev" onclick="decrement()"></div>
-                <h2 id="counting">1</h2>
-              </div>
-            </td>
-            <td>$50.00</td>
-          </tr>
-          <tr>
-            <td>
-              <div class="cart-info">
-                <img src="images/Jacket (1).png" />
-                <div>
-                  <p>Glacier</p>
-                </div>
-              </div>
-            </td>
-
-            <td>
-              <div class="price">
-                Price: $50.00<br />
-                <a href="">Remove</a>
-              </div>
-            </td>
-            <td>
-              <div class="counter">
-                <div class="next" onclick="increment()"></div>
-                <div class="prev" onclick="decrement()"></div>
-                <h2 id="counting">0</h2>
-              </div>
-            </td>
-            <td>
-              <div class="counter">
-                <div class="next" onclick="increment()"></div>
-                <div class="prev" onclick="decrement()"></div>
-                <h2 id="counting">1</h2>
               </div>
             </td>
             <td>$50.00</td>
@@ -176,9 +142,9 @@
             </tr>
           </table>
         </div>
-        <div class="total-price">
-          <a href="#" class="btn">Proceed to checkout &#8594;</a>
-        </div>
+      </div>
+      <div class="checkout">
+        <a href="#" class="btn checkout">Proceed to checkout &#8594;</a>
       </div>
     </div>
   </body>
