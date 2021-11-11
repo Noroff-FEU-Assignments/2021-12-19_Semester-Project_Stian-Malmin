@@ -82,7 +82,7 @@
               <div class="counter">
                 <div class="next" onclick="increment()"></div>
                 <div class="prev" onclick="decrement()"></div>
-                <h2 id="counting">1</h2>
+                <h2 id="count">1</h2>
               </div>
             </td>
             <td>
@@ -149,3 +149,17 @@
     </div>
   </body>
 </html>
+
+
+<script>
+  var data = 0;
+  document.getElementById("count").innerText = data;
+  function increment() {
+    data = data + 1;
+    document.getElementById("count").innerText = data;
+  }
+  function decrement() {
+    data = data - 1;
+    document.getElementById("count").innerText = data;
+  }
+</script>
