@@ -111,6 +111,8 @@ body p {
 .image-middle {
   background-image: url(images/Photo\ -\ center.png);
   background-image: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 90%;
   height: 85%;
   margin: 0 auto;
@@ -256,27 +258,27 @@ a {
   width: 100vw;
   box-shadow: inset 0px 0px 40px 0.1px #1e2836;
 }
-form h1 {
+.contact form h1 {
   text-align: center;
   color: #fff;
   margin: 2%;
   margin-bottom: 3%;
   font-size: 32px;
 }
-form p {
+.contact form p {
   color: #fff;
 }
-form {
+.contact form {
   width: 75%;
   max-width: 500px;
   min-width: 150px;
   padding: 2%;
 }
-.input {
+.contact .input {
   margin-bottom: 30px;
   position: relative;
 }
-input,
+.contact input,
 textarea {
   width: 100%;
   padding: 15px;
@@ -287,7 +289,7 @@ textarea {
   font-size: 1em;
   border-radius: 15px;
 }
-.input label {
+.contact .input label {
   height: 100%;
   position: absolute;
   left: 0;
@@ -298,10 +300,10 @@ textarea {
   transition: 0.2s;
 }
 
-input:focus ~ label,
-input:valid ~ label,
-textarea:focus ~ label,
-textarea:valid ~ label {
+.contact input:focus ~ label,
+.contact input:valid ~ label,
+.contact textarea:focus ~ label,
+.contact textarea:valid ~ label {
   top: -35px;
   font-size: 14px;
 }
@@ -335,11 +337,10 @@ textarea:valid ~ label {
   margin: 3% auto;
 }
 .radio-label {
-  padding: 1% 2%;
+  padding: 0.5% 1%;
   margin: 1%;
-  font-size: 3em;
-  font-weight: bold;
-  font-family: sans-serif;
+  font-size: 1.5em;
+
   border: #ffc879 solid 2px;
   color: #fff;
   cursor: pointer;
@@ -362,59 +363,64 @@ textarea:valid ~ label {
 /*_____________________________cart_____________________________
  */
 .cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 2% 0;
   width: 100%;
   max-height: 500px;
-  margin: 3% 0% 0% 0%;
   color: #fff;
   background: linear-gradient(#4a566e, #1e2836);
   box-shadow: inset 0px 0px 40px 0.1px #1e2836;
 }
 .cart-list {
-  width: 70%;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-table {
-  width: 80%;
+.cart-list table {
+  width: 100%;
   border-collapse: collapse;
-  margin: auto auto auto 3%;
+  margin: 3%;
 }
 
 .cart-info {
   display: flex;
   flex-wrap: wrap;
+  justify-content: left;
 }
-th {
+.cart-list th {
   text-align: left;
   padding: 5px;
   color: #fff;
   font-weight: normal;
   border-bottom: #fff solid 1px;
 }
-td {
+.cart-list td {
   padding: 10px 5px;
-}
-td input {
   width: 40px;
   height: 30px;
-  padding: 5px;
-  margin: 30px 0 0 30px;
 }
 td a {
-  color: #ff523b;
+  color: #867c7b;
   font-size: 12px;
 }
 td img {
-  width: 20%;
-  margin-right: 10px;
+  width: 25%;
+  min-width: 80px;
+  margin-right: 3%;
 }
 
 .total table {
   border-top: 3px solid #fff;
-  width: 100%;
-  max-width: 350px;
+  margin-left: auto;
+  margin-right: 0;
+  max-width: 260px;
 }
 .total {
-  margin: 1% 0% 0% 53%;
+  width: 100%;
+  margin: 0 6%;
 }
 td:last-child {
   text-align: right;
@@ -422,6 +428,34 @@ td:last-child {
 th:last-child {
   text-align: right;
 }
+.payment {
+  width: 350px;
+  margin: auto;
+  text-align: center;
+  border: #fff solid 1px;
+}
+.payment input {
+  width: 80%;
+  padding: 2.5%;
+  margin: 1% 2%;
+}
+.payment label {padding: 0 60px;}
+.payment .radio-label {
+  display: inline-block;
+  margin: 5% 1%;
+  padding: 2%;
+  border: #fff solid 1px;
+}
+.payment .radio-label:last-of-type {
+  padding-top: 11px;
+}
+.payment h1 {
+  margin: 4%;
+}
+.payment .button {
+  margin: 5%;
+}
+
 
 /*_____________________________buttons_____________________________
  */
@@ -438,10 +472,13 @@ th:last-child {
   font-weight: bold;
   transition: ease-in 0.2s;
 }
-button {
+.button {
+  display: inline-block;
+  text-align: center;
   font-size: 1.5em;
   font-weight: bold;
   padding: 3%;
+  margin: 1%;
   color: #fff;
   outline: none;
   background: #b9863d;
@@ -468,6 +505,10 @@ button {
   background: #d6aa6d;
   padding: 0.75% 3.1%;
 }
+.button:hover {
+  background: #d6aa6d;
+}
+
 .bluebutton:hover {
   background: #8696b1;
   padding: 0.75% 3.1%;
@@ -554,7 +595,7 @@ button {
 @media only screen and (max-width: 920px) {
   /*_____________________________ media query index_____________________________
  */
-  body {
+  .index {
     text-align: center;
   }
   .index .middle {

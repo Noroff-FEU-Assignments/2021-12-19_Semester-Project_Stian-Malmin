@@ -68,26 +68,12 @@
           <tr>
             <td>
               <div class="cart-info">
-                <img src="images/Jacket (1).png" href="prodspec1.html" />
-                <div>
-                  <p>Glacier</p>
-                </div>
+                <img src="images/Jacket(4).png" href="prodspec1.html" />
+                <p>Glacier</p>
               </div>
             </td>
-            <td>
-              <div class="counter">
-                <div class="next" onclick="increment()"></div>
-                <div class="prev" onclick="decrement()"></div>
-                <h2 id="counting">1</h2>
-              </div>
-            </td>
-            <td>
-              <div class="counter">
-                <div class="next" onclick="increment()"></div>
-                <div class="prev" onclick="decrement()"></div>
-                <h2 id="count">1</h2>
-              </div>
-            </td>
+            <td>M</td>
+            <td>1</td>
             <td>
               <div class="price">
                 $50.00<br />
@@ -99,26 +85,12 @@
           <tr>
             <td>
               <div class="cart-info">
-                <img src="images/Jacket (1).png" />
-                <div>
-                  <p>Glacier</p>
-                </div>
+                <img src="images/Jacket(1).png" />
+                <p>Glacier</p>
               </div>
             </td>
-            <td>
-              <div class="counter">
-                <div class="next" onclick="increment()"></div>
-                <div class="prev" onclick="decrement()"></div>
-                <h2 id="counting">1</h2>
-              </div>
-            </td>
-            <td>
-              <div class="counter">
-                <div class="next" onclick="increment()"></div>
-                <div class="prev" onclick="decrement()"></div>
-                <h2 id="counting">1</h2>
-              </div>
-            </td>
+            <td>M</td>
+            <td>1</td>
             <td>
               <div class="price">
                 $50.00<br />
@@ -128,7 +100,6 @@
             <td>$50.00</td>
           </tr>
         </table>
-
         <div class="total">
           <table>
             <tr>
@@ -146,22 +117,47 @@
           </table>
         </div>
       </div>
-      <div class="checkout">
-        <a href="#" class="btn checkout">Proceed to checkout &#8594;</a>
+
+      <!--
+     __________________________Payment _______________________________
+    -->
+      <div class="payment">
+        <h1>Payment</h1>
+        <div class="radio">
+          <!--Radio option 1-->
+          <input
+            class="radio-input"
+            type="radio"
+            value="option 1"
+            name="myradio"
+            id="myradio1"
+          />
+          <label for="myradio1" class="radio-label">
+            <img src="images/paypal.png" alt="" />Paypal
+          </label>
+
+          <!--Radio option 2 -->
+          <input
+            class="radio-input"
+            type="radio"
+            value="option 2"
+            name="myradio"
+            id="myradio2"
+          />
+          <label for="myradio2" class="radio-label">
+            <img src="images/card.png" alt="" />Credit card
+          </label>
+          <label for="cardname">Name on card</label>
+          <input type="text" name="Name on card" id="cardname" />
+          <label for="number">Card number</label>
+          <input type="text" name="Card number" id="number" />
+          <label for="expiration">Expiration date</label>
+          <input type="date" name="Expiration date" id="expiration" />
+          <label for="cvv">cvv</label>
+          <input type="text" name="cvv" id="cvv" />
+          <a href="#" class="button">Pay now</a>
+        </div>
       </div>
     </section>
   </body>
 </html>
-
-<script>
-  var data = 0;
-  document.getElementById("count").innerText = data;
-  function increment() {
-    data = data + 1;
-    document.getElementById("count").innerText = data;
-  }
-  function decrement() {
-    data = data - 1;
-    document.getElementById("count").innerText = data;
-  }
-</script>
