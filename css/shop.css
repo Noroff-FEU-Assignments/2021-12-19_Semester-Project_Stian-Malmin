@@ -1,0 +1,58 @@
+
+/* ================================================================ */
+/*                               SHOP                               */
+/* ================================================================ */
+
+ .shop {
+	background: linear-gradient(#4a566e, #1e2836);
+	width: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: center;
+	box-shadow: inset 0px 0px 40px 0.1px #1e2836;
+  }
+  .shop-all {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  
+  a {
+	text-decoration: none;
+	color: #fff;
+  }
+  
+  .title {
+	text-align: center;
+	padding-top: 2%;
+	margin: 0 auto 3%;
+	color: #fff;
+	font-size: 2em;
+  }
+  
+  .shop-single {
+	flex-basis: 1%;
+	min-width: 200px;
+	margin-bottom: 4%;
+	transition: transform 0.5s;
+	text-align: center;
+  }
+  .shop-single img {
+	width: 90%;
+  }
+  .shop-single h2 {
+	font-size: 18px;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+  }
+  .shop-single p {
+	font-size: 18px;
+	color: #fff;
+	margin: 0;
+  }
+  .shop-single:hover {
+	transform: translateY(-2%) scale(105%);
+  }
+  
