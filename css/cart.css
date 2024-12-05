@@ -1,0 +1,98 @@
+/* ================================================================ */
+/*                               CART                               */
+/* ================================================================ */
+
+ .cart {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	margin: 2% 0;
+	width: 100%;
+	max-height: 500px;
+	color: #fff;
+	background: linear-gradient(#4a566e, #1e2836);
+	box-shadow: inset 0px 0px 40px 0.1px #1e2836;
+  }
+  .cart-list {
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .cart-list table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 3%;
+  }
+  
+  .cart-info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+  }
+  .cart-list th {
+	text-align: left;
+	padding: 5px;
+	color: #fff;
+	font-weight: normal;
+	border-bottom: #fff solid 1px;
+  }
+  .cart-list td {
+	padding: 10px 5px;
+	width: 40px;
+	height: 30px;
+  }
+  td a {
+	color: #867c7b;
+	font-size: 12px;
+  }
+  td img {
+	width: 25%;
+	min-width: 80px;
+	margin-right: 3%;
+  }
+  
+  .total table {
+	border-top: 3px solid #fff;
+	margin-left: auto;
+	margin-right: 0;
+	max-width: 260px;
+  }
+  .total {
+	width: 100%;
+	margin: 0 6%;
+  }
+  td:last-child {
+	text-align: right;
+  }
+  th:last-child {
+	text-align: right;
+  }
+  .payment {
+	width: 350px;
+	margin: auto;
+	text-align: center;
+	border: #fff solid 1px;
+  }
+  .payment input {
+	width: 80%;
+	padding: 2.5%;
+	margin: 1% 2%;
+  }
+  .payment label {padding: 0 60px;}
+  .payment .radio-label {
+	display: inline-block;
+	margin: 5% 1%;
+	padding: 2%;
+	border: #fff solid 1px;
+  }
+  .payment .radio-label:last-of-type {
+	padding-top: 11px;
+  }
+  .payment h1 {
+	margin: 4%;
+  }
+  .payment .button {
+	margin: 5%;
+  }
+  
